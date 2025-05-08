@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    justify-content: flex-start; /* Mantém o alinhamento à esquerda */
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+
+.container {
+    padding: 40px;
+    width: 60vw; /* Mantém um tamanho equilibrado */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start; /* Alinha os elementos internos à esquerda */
+    text-align: left;
+    padding-left: 2%;
+}
+
+input {
+    width: 70%; /* Ajusta o tamanho dos inputs */
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    text-align: left; /* Evita centralização do texto */
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    padding: 15px;
+    background-color: #0026ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center; /* Centraliza o texto */
+    margin-top: 20px;
+}
+
+
+button:hover {
+    background-color: #000269;
+}
+
+.link-login {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #0026ff;
+    text-decoration: none;
+}
+
+#email-erro {
+    color: red;
+    font-size: 14px;
+    height: 18px; /* Mantém espaço fixo */
+    display: block;
+    visibility: hidden; /* Esconde sem remover o espaço */
+}
+
+#email-erro.mostrar {
+    visibility: visible; /* Mostra a mensagem sem alterar o layout */
+}
